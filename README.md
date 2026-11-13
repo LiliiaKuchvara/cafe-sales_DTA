@@ -29,6 +29,7 @@ The original dataset contains missing values, invalid entries, and inconsistent 
 
 
 The original dataset contains 10,000 transactions and 8 columns, including transaction ID, item, quantity, price, total spent, payment method, location, and transaction date.
+(https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
 
 ## 🧹 Data Cleaning
 
