@@ -1,14 +1,16 @@
 # ☕ Cafe Sales Analysis
 
-An end-to-end data analytics project focused on cleaning, exploring, and visualizing cafe sales data using Python and Tableau.
+An end-to-end data analytics project focused on data cleaning, exploratory data analysis (EDA), and interactive dashboard development using Python and Tableau.
+
+---
 
 ## 📌 Project Overview
 
-The goal of this project is to analyze cafe sales, evaluate product performance, explore customer purchasing patterns, and derive actionable business insights.
+The goal of this project is to analyze cafe sales data, evaluate product performance, explore customer purchasing patterns, and derive actionable business insights.
 
-The project follows a complete data analytics workflow, starting with a raw dataset containing missing values and inconsistent entries, followed by data cleaning, exploratory data analysis (EDA), and interactive Tableau dashboard development.
+The project follows a complete data analytics workflow, starting with a raw dataset containing missing values and inconsistent entries, followed by data cleaning, exploratory data analysis, and interactive Tableau dashboard development.
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
 - Inspect and assess the quality of raw sales data.
 - Clean and prepare the dataset for analysis.
@@ -21,19 +23,22 @@ The project follows a complete data analytics workflow, starting with a raw data
 
 ## 🛠 Tools & Technologies
 
-- **Python:** Pandas, NumPy
-- **Visualization:** Matplotlib
-- **Environment:** Jupyter Notebook / Google Colab
-- **Dashboarding:** Tableau Public
-- **Version Control:** GitHub
+| Category | Tools |
+|---|---|
+| Programming Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Data Visualization | Matplotlib |
+| Environment | Jupyter Notebook, Google Colab |
+| Dashboarding | Tableau Public |
+| Version Control | GitHub |
 
 ## 📂 Dataset
 
 The original dataset, **Cafe Sales — Dirty Data for Cleaning Training**, is sourced from Kaggle.
 
-[Dataset on Kaggle](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
+[View Dataset on Kaggle](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
 
-The raw dataset contains 10,000 transactions and 8 columns:
+The raw dataset contains **10,000 transactions and 8 columns**:
 
 - Transaction ID
 - Item
@@ -46,7 +51,7 @@ The raw dataset contains 10,000 transactions and 8 columns:
 
 The dataset intentionally contains missing values and inconsistent entries, including `ERROR` and `UNKNOWN` placeholders.
 
-## 🧹 Data Cleaning
+## 🧹 Data Cleaning & Preparation
 
 The data preparation process included:
 
@@ -65,17 +70,17 @@ The data preparation process included:
 
 | Metric | Result |
 |---|---:|
-| Original records | 10,000 |
-| Final records | 9,514 |
-| Removed records | 486 (4.86%) |
-| Original columns | 8 |
-| Final columns | 14 |
-| Missing values after cleaning | 0 |
-| Reconstructed product names | 450 |
+| Original Records | 10,000 |
+| Final Records | 9,514 |
+| Removed Records | 486 (4.86%) |
+| Original Columns | 8 |
+| Final Columns | 14 |
+| Missing Values After Cleaning | 0 |
+| Reconstructed Product Names | 450 |
 
-## 📊 Key Findings
+## 📊 Exploratory Data Analysis & Key Findings
 
-### Business KPIs
+### 1. Business KPIs
 
 | KPI | Result |
 |---|---:|
@@ -86,20 +91,20 @@ The data preparation process included:
 | Top Product by Revenue | Salad |
 | Salad Revenue | $18,220 |
 
-### Product Performance
+### 2. Product Performance
 
 - Salad generated the highest revenue, with **$18,220**, accounting for approximately **21.47%** of total revenue.
 - Sandwich and Smoothie were the next highest revenue-generating products.
-- Coffee had the highest quantity sold, with 3,766 units.
+- Coffee had the highest quantity sold, with **3,766 units**.
 
-### Payment Method & Location
+### 3. Payment Method & Location Analysis
 
 - Among identified payment methods, Digital Wallet generated the highest revenue, although the difference from Cash was very small.
-- Unknown payment methods account for approximately 31.02% of total revenue.
-- Among identified locations, In-store accounted for approximately 50.46% of revenue, while Takeaway accounted for 49.54%.
-- Unknown locations account for approximately 39.63% of total revenue.
+- Unknown payment methods account for approximately **31.02%** of total revenue.
+- Among identified locations, In-store accounted for approximately **50.46%** of revenue, while Takeaway accounted for **49.54%**.
+- Unknown locations account for approximately **39.63%** of total revenue.
 
-### Sales Trends
+### 4. Sales Trends
 
 - June recorded the highest monthly revenue (**$7,353**).
 - February recorded the lowest monthly revenue (**$6,644**).
@@ -107,15 +112,17 @@ The data preparation process included:
 - Wednesday had the lowest average check (**$8.72**).
 - Average check was almost identical on weekdays (**$8.93**) and weekends (**$8.89**).
 
-### Outlier Analysis
+### 5. Outlier Analysis
 
-- The IQR method identified **259 outlier transactions**, representing approximately **2.72%** of all transactions.
+The Interquartile Range (IQR) method was used to identify unusual transaction values.
+
+- **259 outlier transactions** were identified, representing approximately **2.72%** of all transactions.
 - All identified outliers were Salad purchases with a transaction value of **$25**.
 - These transactions were reviewed in context and retained, as they represent valid purchases rather than confirmed data errors.
 
-### Correlation Analysis
+### 6. Correlation Analysis
 
-The correlation matrix revealed:
+The correlation matrix was used to investigate relationships between quantity, unit price, and total spending.
 
 | Variables | Correlation |
 |---|---:|
@@ -123,38 +130,37 @@ The correlation matrix revealed:
 | Quantity & Total Spent | 0.70 |
 | Price Per Unit & Total Spent | 0.65 |
 
-The results indicate a strong positive relationship between quantity and total transaction value, as well as a moderately strong positive relationship between unit price and total spent.
+The results indicate:
+
+- A negligible relationship between quantity and unit price.
+- A strong positive relationship between quantity and total transaction value.
+- A moderately strong positive relationship between unit price and total spending.
+
+---
 
 ## 📈 Tableau Dashboards
 
-Interactive Tableau visualizations were developed to explore business performance and sales patterns.
-
-## 📊 Tableau Dashboards
-
-The project includes two interactive Tableau dashboards developed to explore cafe sales performance and uncover business insights.
+Two interactive dashboards were developed in Tableau to present the results of the analysis from different business perspectives.
 
 ### 1. Sales Overview
 
-Provides a high-level view of business performance, including total revenue, number of transactions, average check, product revenue, revenue by location, monthly revenue, and payment method distribution.
+Provides a high-level view of cafe performance, including:
+
+- Total Revenue
+- Total Transactions
+- Average Check
+- Revenue by Product
+- Revenue by Location
+- Revenue by Month
+- Revenue by Payment Method
 
 ![Sales Overview](screenshots/sales-overview.png)
 
 ### 2. Sales Patterns & Insights
 
-Explores daily revenue trends, the 7-day moving average, average check by weekday, transaction outliers, and correlations between quantity, unit price, and total spending.
+Focuses on sales dynamics, transaction behavior, and statistical relationships.
 
-![Sales Patterns & Insights](screenshots/sales-patterns.png)
-
-### 1. Sales Overview
-
-- Key business KPIs
-- Revenue by product
-- Revenue by location
-- Revenue by payment method
-- Monthly revenue
-- Product quantity analysis
-
-### 2. Sales Patterns & Insights
+Includes:
 
 - Daily Revenue & 7-Day Moving Average
 - Average Check by Weekday
@@ -162,7 +168,11 @@ Explores daily revenue trends, the 7-day moving average, average check by weekda
 - Outlier Transactions by Product
 - Correlation Heatmap
 
-[View Tableau Dashboard on Tableau Public](https://public.tableau.com:9443/views/Cafe_Sales_EDA_Dashboard/SalesOverview?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Sales Patterns & Insights](screenshots/sales-patterns.png)
+
+**[View Interactive Dashboards on Tableau Public](https://public.tableau.com:9443/views/Cafe_Sales_EDA_Dashboard/SalesOverview?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
+---
 
 ## ⚠️ Data Limitations
 
@@ -172,23 +182,23 @@ Explores daily revenue trends, the 7-day moving average, average check by weekda
 - Statistical outliers were reviewed in context rather than automatically removed.
 - The findings should be interpreted with these data quality limitations in mind.
 
-## 📁 Repository Structure
+## ## 📁 Repository Structure
 
 ```text
 cafe_sales/
 │
-├── README.md
-│
 ├── data/
-│   ├── dirty_cafe_sales.csv
-│   └── cafe_sales_clean.csv
+│   ├── cafe_sales_clean(O).csv
+│   └── dirty_cafe_sales.csv
+│
+├── notebooks/
+│   ├── eda_cafe_sales.ipynb
+│   └── requirements.txt
 │
 ├── tableau/
 │   └── dashboard.twbx
 │
-└── notebooks/
-    ├── eda_cafe_sales.ipynb
-    └── requirements.txt
+└── README.md
 ```
 
 ## 💡 Conclusion
