@@ -146,7 +146,7 @@ Interactive Tableau visualizations were developed to explore business performanc
 - Outlier Transactions by Product
 - Correlation Heatmap
 
-[View Tableau Dashboard on Tableau Public](https://public.tableau.com/views/Cafe_Sales_EDA_Dashboard/SalesOverview?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[View Tableau Dashboard on Tableau Public](https://public.tableau.com:9443/views/Cafe_Sales_EDA_Dashboard/SalesOverview?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## ⚠️ Data Limitations
 
