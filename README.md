@@ -129,6 +129,22 @@ The results indicate a strong positive relationship between quantity and total t
 
 Interactive Tableau visualizations were developed to explore business performance and sales patterns.
 
+## 📊 Tableau Dashboards
+
+The project includes two interactive Tableau dashboards developed to explore cafe sales performance and uncover business insights.
+
+### 1. Sales Overview
+
+Provides a high-level view of business performance, including total revenue, number of transactions, average check, product revenue, revenue by location, monthly revenue, and payment method distribution.
+
+![Sales Overview](screenshots/sales-overview.png)
+
+### 2. Sales Patterns & Insights
+
+Explores daily revenue trends, the 7-day moving average, average check by weekday, transaction outliers, and correlations between quantity, unit price, and total spending.
+
+![Sales Patterns & Insights](screenshots/sales-patterns.png)
+
 ### 1. Sales Overview
 
 - Key business KPIs
