@@ -154,7 +154,6 @@ Provides a high-level view of cafe performance, including:
 - Revenue by Month
 - Revenue by Payment Method
 
-![Sales Overview](screenshots/sales-overview.png)
 
 ### 2. Sales Patterns & Insights
 
@@ -168,7 +167,6 @@ Includes:
 - Outlier Transactions by Product
 - Correlation Heatmap
 
-![Sales Patterns & Insights](screenshots/sales-patterns.png)
 
 **[View Interactive Dashboards on Tableau Public](https://public.tableau.com:9443/views/Cafe_Sales_EDA_Dashboard/SalesOverview?:language=de-DE&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
